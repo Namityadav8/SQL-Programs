@@ -1,0 +1,21 @@
+declare
+  n number;
+  result number;
+
+  function factorial(x number)
+  return number
+  is
+    fact number;
+  begin
+    if x=0 then 
+      fact:=1;
+    else
+      fact:=x*factorial(x-1);
+    end if;
+    return fact;
+  end;
+begin
+  n:=5;
+  result := factorial(n);
+  dbms_output.put_line('the factorial is: '||result);
+end;
