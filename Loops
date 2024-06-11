@@ -1,0 +1,8 @@
+declare
+       num number(2);
+
+begin
+     for num in reverse 10..20 loop
+     dbms_output.put_line('the value of the numbers are :' ||num);
+     end loop;
+end;
