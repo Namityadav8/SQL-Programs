@@ -1,0 +1,17 @@
+declare
+x int ;
+y int ;
+z int ;
+begin
+x:=40;
+y:=9;
+z:=30 ;
+if x>y AND x>z then 
+dbms_output.put_line('greater number is '||x);
+elsif y>x AND y>z then
+dbms_output.put_line('greater number is '||y);
+else
+dbms_output.put_line('greater number is '||y);
+
+end if;
+end;
