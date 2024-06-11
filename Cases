@@ -1,0 +1,11 @@
+declare 
+grade char(1):='A';
+begin
+case grade 
+          when 'A' then dbms_output.put_line('excellent');
+          when 'B' then dbms_output.put_line('very good');
+          when 'C' then dbms_output.put_line('good');
+          else
+          dbms_output.put_line('better luck try again');
+end case;
+end;
