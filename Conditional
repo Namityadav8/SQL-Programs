@@ -1,0 +1,10 @@
+declare 
+i integer;
+begin
+i:=i+10;
+if i is NULL then 
+dbms_output.put_line('i is null here');
+else
+dbms_output.put_line('i is not null here');
+end if;
+end;
